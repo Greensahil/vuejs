@@ -14,6 +14,9 @@
         <button v-on:dblclick="add(10)">Add 10 years</button>
         <button v-on:dblclick="subtract(10)">Substaract 10 years</button>
         <h1>My age is {{age}}</h1>
+        <label>Age</label>
+        <input type="text" v-on:keyup.alt.enter="logName">
+
 
         <div id="canvas" v-on:mousemove="updateXY">
                 {{ x }},{{ y }}
